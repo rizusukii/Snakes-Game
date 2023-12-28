@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Snake Game</title>
+    <title>Nostalgic Snake Game</title>
 </head>
 <body>
-    <h1 class="game-title">Let's Play Snakes</h1>
-    <div class="game-container">
-        <div class="snake-head" id="snake"></div>
-        <div class="food" id="food"></div>
-    </div>
-    <div class="score-container">
-        <span id="score">Score: 0</span>
+    <div class="container">
+        <h1>Let's Play Snakes</h1>
+        <div id="game-box">
+            <!-- Snake and Food will be appended here dynamically using JavaScript -->
+        </div>
+        <div id="score-board">
+            <p>Score: <span id="score">0</span></p>
+            <p>High Score: <span id="high-score">0</span></p>
+        </div>
+        <div id="game-over" style="display: none;">
+            <p>GAME OVER</p>
+            <button id="restart-btn" onclick="restartGame()">Play Again</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
